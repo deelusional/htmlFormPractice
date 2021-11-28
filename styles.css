@@ -4,6 +4,20 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+header h1{
+  color: white;
+  text-align: center;
+  font-size: 48px;
+}
+
+ul {
+  /* Remove all <ul> bullet points with list-style: none; */
+  list-style: none;
+  /* Set margin and padding to 0 to remove <ul> indentation */
+  margin: 0;
+  padding: 0;
+}
+
 form {
   width: 30rem;
   margin: 3rem auto;
