@@ -1,0 +1,65 @@
+body{
+  background-color: rgb(31, 30, 30);
+  margin: 8rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+form {
+  width: 30rem;
+  margin: 3rem auto;
+  background-color: rgb(255,255,255);
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+label {
+  margin-bottom: .5rem;
+  display: block;
+}
+
+
+input, textarea, select {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  /* To use the same font family as in the body, add 'inherit' to font */
+  font: inherit;
+  border: 1px solid rgb(184, 184, 184);
+  padding: .25rem;
+  color: rgb(10, 10, 10);
+}
+
+input:focus, textarea:focus{
+  background-color: rgb(142, 194, 207);
+  color: rgb(6, 105, 129);
+  border-color: rgb(6, 105, 129);
+}
+
+button{
+  display: block;
+  /* To use the same font family as in the body, add 'inherit' to font */
+  font: inherit;
+  background-color: rgb(6, 105, 129);
+  color: white;
+  border 1px solid rgb(6, 105, 129);
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  box-shadow rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: rgb(142, 194, 207);
+  border: rgb(142, 194, 207);
+}
+
+.form-control-inline{
+  display: flex;
+}
+
+.form-control-inline input {
+  width: auto;
+  margin-right: .5rem;
+}
+
