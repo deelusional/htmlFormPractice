@@ -1,6 +1,7 @@
 body {
   font-family: sans-serif;
-  background-color: rgb(189, 187, 219);
+  background-color: rgb(166, 173, 238);
+  color: white;
 }
 
 h1{
@@ -11,8 +12,91 @@ h1{
 form{
   width: 40rem;
   margin: auto;
-  background-color: rgb(204, 202, 228);
+  background-color: rgb(192, 192, 197);
   padding: 1rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   border-radius: 6px;
+}
+
+section{
+  margin: 1rem;
+}
+
+ul{
+  list-style: none;
+  /* Labels and inputs are indented. Remove indentation with margin/padding: 0; */
+  margin: 0;
+  padding: 0;
+}
+
+label{
+  color: rgb(6, 6, 90);
+  /* Labels are inline elements so set display: block; */
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input, textarea, select{
+  font: inherit;
+  padding: 0.5rem;
+  border: 1px solid rgb(6, 6, 90);
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea{
+  resize: none;
+}
+
+input:focus, textarea:focus {
+  background-color: rgb(195, 195, 241);
+}
+
+button {
+  font: inherit;
+  border: 1px solid rgb(6, 6, 90);
+  background-color: rgb(68, 90, 233);
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+}
+
+#form-btn {
+  text-align: right;
+}
+
+.btn-filled {
+  background-color: rgb(6, 6, 90);
+  color: white;
+}
+
+.btn-empty {
+  background-color: transparent;
+  color: blue;
+}
+
+.btn-filled:hover{
+  background-color: rgb(108, 108, 155);
+  border: rgb(108, 108, 155);
+}
+
+.btn-empty:hover{
+  background-color: rgb(201, 216, 244);
+}
+
+.inline-control{
+  display: flex;
+}
+
+.inline-control label {
+  margin: 0;
+  margin-left: 0.5rem;
+  padding: 0.1rem;
+}
+
+.inline-control input {
+  /* Change the width from 100% */
+  width: auto;
 }
